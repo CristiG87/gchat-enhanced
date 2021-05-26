@@ -280,7 +280,7 @@ function getQuotedReply(message) {
         || (image ? `📷: ${image.alt}` : "")
         || (thread ? `💬: ${thread.href}` : "")
 
-    return quote.length < 280 ? quote : `${quote.substring(0, 280)} \n[...]`
+    return quote.length < 1000 ? quote : `${quote.substring(0, 1000)} \n[...]`
 }
 
 function extractTextContent(message) {
